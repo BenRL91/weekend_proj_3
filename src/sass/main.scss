@@ -85,7 +85,6 @@ header.header2 {
 	}
 
 	aside {
-		// border: 1px solid black;
 		width: 250px;
 		background: #F6F5FB;
 		// background: white;
@@ -197,6 +196,10 @@ header.header2 {
 .colorBlocks {
 	display: flex;
 	flex-direction: row;
+	div {
+	border: 1px solid #E2E2E2;
+	border-radius: 3px;	
+	}
 	.orange {
 		background: #FF7F00;
 	}
@@ -216,6 +219,9 @@ header.header2 {
 	.black {
 		background: black;
 	}
+	.white {
+		background: white;
+	}
 }
 .color {
 	height: 22px;
@@ -224,23 +230,48 @@ header.header2 {
 	margin: 2px;
 }
 
-.ordering_options {
-
+.related_to {
+	width: 700px;
+	color: #2E92B5;
+	display: flex;
+	// flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	a {
+		margin: 5px 0px;
+		&:first-child {
+			margin-top: 30px;
+		}
+	}
+	span:first-child {
+		position: absolute;
+		margin-bottom: 20px;
+		color: black;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .pageNum {
 	display: flex;
-	justify-content: center;
+	width: 100%;
+	// justify-content: center;
+
 	button {
+		margin: 20px 0px;
 		background: white;
 		height: 38px;
-		width: 35px;
+		width: 34px;
+		border: 1px solid #D9D9D9;
 		// text-align: center;
 		font-size: 16px;
 		&:first-child {
 			background: #F6F5FB;
 		}
 		&:nth-child(2) {
+			border: 1px solid #91918D;
 			background: #F1F1EB;
 		}
 		&:nth-child(10) {
@@ -266,3 +297,24 @@ header.header2 {
 .price {
 	color: #78C042;
 }
+
+.pre_footer {
+	border-top: 1px solid #E2E2E2;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
