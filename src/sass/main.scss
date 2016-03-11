@@ -6,20 +6,65 @@
 }
 
 .total_wrap {
-	width: 100%;
+	width: 1366px;
+	background-color: #F6F5FB;
 }
 
 
 header.header1 {
 	display: flex;
-	justify-content: space-between;
-	margin: 0px 183px;
+	align-items: center;
+	// justify-content: space-between;
+	padding: 0px 183px;
+	background-color: white;
+
+	.etsylogo {
+		background-image: url("./etsylogo.png");
+		height: 96px;
+		width: 96px;
+		background-size: 105%;
+	}
+	.searchBtn {
+		background: #34A8C4;
+		color: white;
+	}
+	.signin_container {
+	margin-left: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 350px;
+
+		a {
+			color: #0192B9;
+		}
+
+		.signInBtn {
+			color: #0192B9;
+			background: white;
+		}
+		.cart_sprite {
+			display: flex;
+			align-items: flex-end;
+			margin-top: 10px;
+			background: url(./cart.png);
+			background-size: 40%;
+			background-repeat: no-repeat;
+			font-size: 14px;
+			height: 38px;
+			width: 50px;
+		}
+	}
 }
 
 header.header2 {
+	color: #777777;
+	font-size: 15px;
 	display: flex;
-	justify-content: space-around;
-	margin: 0px 190px;
+	justify-content: space-between;
+	padding: 0px 190px;
+	background-color: white;
+	width: 1280px;
 }
 .app {
 	width: 1000px;
@@ -34,35 +79,73 @@ header.header2 {
 	}
 
 	h5 {
-		margin-bottom: 0;
+		margin: 0;
 		margin-left: 15px;
 
 	}
 
 	aside {
-		border: 1px solid black;
+		// border: 1px solid black;
 		width: 250px;
+		background: #F6F5FB;
+		// background: white;
 		.list {
 			display: flex;
 			flex-direction: column;	
-			border: 1px solid gray;
-			margin-left: 20px;
-			width: 200px;
-			margin-bottom: 40px;
+			border: 1px solid #CBCCC9;
+			background: white;
+			margin: 15px 0px 0px 0;
+			width: 100%;
+
 			a {
+			 	color: #5CA7E5;
 				font-size: 13px;
 				text-decoration: none;
-				margin: 2px 0px;
+				margin: 4px 0px 4px 30px;
 				// margin-left: 26px;
 			}
 		}
 	}
 
+	nav {
+	}
+	.greyfiller {
+		font-size: 14px;
+		font-weight: bold;
+		background: #F6F5FB;
+		height: 50px;
+		width: 100%;
+		border: 1px 0px 1px 0px solid #CBCCC9;
+
+	}
+
+			.list2 {
+			display: flex;
+			flex-direction: column;	
+			background: white;
+			border: 1px solid #CBCCC9;
+			// margin: 0px 0px 0 0;
+			width: 100%;
+		}
+
+	.item_type {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+.item_type input {
+	position: absolute;
+	left: 10px;
+}
+.item_type span {
+	color: #5CA7E5;
+	padding-left: 36px;
+}
 	main {
 		width: 80%;
 		display: flex;
 		flex-direction: column;
-		background: blue;
+		background: #F6F5FB;
 		// flex-wrap: wrap;
 
 
@@ -71,12 +154,16 @@ header.header2 {
 		.main1wrapper {
 		height: 500px;
 		width: 70%;
-		// background: blue;
+		background: url();
 		}
 		.main2wrapper {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-around;
+			.prodInfo {
+				background: white;
+
+			}
 			.shop {
 				text-overflow: ellipsis;
 				width: 240px;
@@ -93,7 +180,89 @@ header.header2 {
 		}
 }
 
+.price_range {
+	display: flex;
+	// flex-direction: row;
+	flex-wrap: wrap;
+	input {
+		width: 50px;
+	}
+
+}
+.color_filter {
+	display: flex;
+	flex-direction: column;
+}
+
+.colorBlocks {
+	display: flex;
+	flex-direction: row;
+	.orange {
+		background: #FF7F00;
+	}
+	.yellow {
+		background: #F3CC0C;
+	}
+	.green {
+		background: #0AC20A;
+	}
+	.blue {
+		background: #0CCCF3;
+	}
+	.indigo {
+		background: #A60CF3;
+	}
+	
+	.black {
+		background: black;
+	}
+}
+.color {
+	height: 22px;
+	width: 22px;
+	background: red;
+	margin: 2px;
+}
+
+.ordering_options {
+
+}
+
+.pageNum {
+	display: flex;
+	justify-content: center;
+	button {
+		background: white;
+		height: 38px;
+		width: 35px;
+		// text-align: center;
+		font-size: 16px;
+		&:first-child {
+			background: #F6F5FB;
+		}
+		&:nth-child(2) {
+			background: #F1F1EB;
+		}
+		&:nth-child(10) {
+			background: #F6F5FB;
+		}
+		&:nth-child(11) {
+			width: 52px;
+		}
+		}
+}
+
 .price_contain {
 	display: flex;
 	justify-content: space-between;
+}
+
+.shopName {
+	font-size: 13px;
+	font-weight: lighter;
+	color: #A39A9A;
+}
+
+.price {
+	color: #78C042;
 }

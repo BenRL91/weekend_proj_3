@@ -8,17 +8,18 @@
 <body>
 <div class="total_wrap">
 	<header class='header1'>
+			<div class="etsylogo"></div>
 		<div>
-			<span>Etsy</span>
-			<input class='searchbox1'placeholder='Search'>
-		<button class='searchBtn'>Search</button>
+			<input class='searchbox1'placeholder='Search'><button class='searchBtn'>Search</button>
 		</div>
 
 		<div class='signin_container'>
 			<a href="#">Sell On Etsy</a>
 			<a href="#">Register</a>
 			<button class='signInBtn'>Sign In</button>
-			<a href="#" class='cart_sprite'></a>
+			<div href="#" class='cart_sprite'>
+				<span>Cart</span>
+			</div>
 		</div>
 		</header>
 	<header class='header2'>
@@ -40,8 +41,8 @@
 	  		<div class="content_wrapper">
 	  		<aside>
 		        <nav class="categories">
-		        <h5>All Categories</h5>
 			        <div class="list">
+		        <h5>All Categories</h5>
 			           	<a href="#">Paper & Party Supplies</a>
 			        	<a href="#">Jewelry</a>
 			        	<a href="#">Craft Supplies & Tools</a>
@@ -58,17 +59,55 @@
 			        	<a href="#">Electronics & Accessories</a>
 			        	<a href="#">Shoes</a>
 			       	</div>
-			        <div class="list">
+			       	<div class="greyfiller">
+			       		<span class="refine">Refine your search</span>
+			       	</div>
+			        <div class="list2">
 			        	<div class="item_type">
+			        	<h4>Item Type</h4>
+			        		<input type="radio">
+			        		<span>All Items</span>
+			        		<input type="radio">
+			        		<span>Hand Made</span>
+			        		<input type="radio">
+			        		<span>Vintage</span>
 			        	</div>
 			        	<div class="price_range">
+			        	<span>Price ($)</span>
+			        		<input type="text" placeholder="Low">
+			        		<span>to</span>
+			        		<input type="text" placeholder="High">
+			        		<button class='arrow_btn'></button>
 			        	</div>
 			        	<div class="color_filter">
+			        	<span class="filter_span">Filter by color</span>
+			        	<div class='colorBlocks'>
+				        	<div class='color red'></div>
+				        	<div class='color orange'></div>
+				        	<div class='color yellow'></div>
+				        	<div class='color green'></div>
+				        	<div class='color blue'></div>
+				        	<div class='color indigo'></div>
+				        	<div class='color black'></div>
+				        </div>
 			        	</div>
 			        	<div class="ordering_options">
+			        		<input type="checkbox">
+			        		<span>Accepts Etsy gift cards</span>
+			        		<input type="checkbox">
+			        		<span>Customizable</span>
+			        	</div>
 			        	<div class="shop_locations">
+			        		<h5>Shop location</h5>
+			        		<input type="radio">
+			        		<span>Anywhere</span>			     <input type="radio">
+			        		<span>United States</span>
+			        		<span>Choose a custom location</span>
 			        	</div>
 			        	<div class="ship_to">
+			        		<select>
+			        			<option>United States</option>
+			        		</select>
 			        	</div>
 			        </div>
 		        </nav>
@@ -77,6 +116,20 @@
 	  			<div class="main1wrapper">
 	  			</div>
 	  			<div class="main2wrapper">
+	  			</div>
+	  			<div class="pageNum">
+	  				<button disabled="disabled"><</button>
+	  				<button>1</button>
+	  				<button>2</button>
+	  				<button>3</button>
+	  				<button>4</button>
+	  				<button>5</button>
+	  				<button>6</button>
+	  				<button>7</button>
+	  				<button>8</button>
+	  				<button>...</button>
+	  				<button class="totalpages">250</button>
+	  				<button>></button>
 	  			</div>
 	  		</main>
 	  	</div>
