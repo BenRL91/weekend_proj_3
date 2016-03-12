@@ -232,6 +232,11 @@ header.header2 {
 		}
 	}
 }
+
+#allitems {
+	color: black;
+	font-weight: bold;
+}
 	main {
 		width: 80%;
 		display: flex;
@@ -273,7 +278,9 @@ header.header2 {
 	position: relative;
 	span {
 	position: absolute;
-	top: 0;
+	top: 22px;
+	left: 12px;
+	font-size: 14px;
 	}
 }
 .price_range {
@@ -281,7 +288,10 @@ header.header2 {
 	flex-direction: row;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 44px 0px 0px 12px;
+	padding: 44px 0px 0px 5px;
+	border-bottom: 1px solid #CBCCC9;
+	width: 219px;
+	margin: 0px 0px 39px 16px;
 	input {
 		font-size: 14px;
 		width: 70px;
@@ -289,10 +299,11 @@ header.header2 {
 		border: 1px solid #CBCCC9;
 		border-radius: 3px;
 		padding-left: 12px;
+		margin-bottom: 20px;
 	}
 	span {
 		font-size: 13px;
-		margin: 0px 10px;
+		margin: 0px 5px 20px;
 	}
 	.arrow_container {
 		height: 38px;
@@ -300,6 +311,7 @@ header.header2 {
 		border: 1px solid #CBCCC9;
 		position: relative;
 		margin-left: 5px;
+		margin-bottom: 20px;
 	}
 	.arrow_btn {
 		position: absolute;
@@ -315,11 +327,25 @@ header.header2 {
 .color_filter {
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	width: 219px;
+	border-bottom: 1px solid #CBCCC9;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.filter_span {
+	position: absolute;
+	top: -20px;
+	left: 5px;
+	font-size: 14px;
 }
 
 .colorBlocks {
 	display: flex;
 	flex-direction: row;
+	padding-bottom: 20px;
+	// width: 219px;
 	div {
 	border: 1px solid #E2E2E2;
 	border-radius: 3px;	
@@ -354,13 +380,86 @@ header.header2 {
 	margin: 2px;
 }
 
+.ordering_options {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: 15px;
+	position: relative;
+	border-bottom: 1px solid #CBCCC9;
+	width: 215px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	h4 {
+		font-size: 14px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+	}
+	input {
+		position: absolute;
+		left: -2px;
+
+	}
+	span {
+		padding-left: 20px;
+		font-size: 14px;
+		a {
+			color: #0192B9;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline; 
+			}
+		}
+	}
+}
+
 .shop_locations {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	padding-top: 45px;
+	padding-bottom: 30px;
+	// border-bottom: 1px solid #CBCCC9;
+	width: 215px;
+	margin-left: 15px;
+	h5 {
+		position: absolute;
+		top: 10px;
+	}
 	input {
 		position: absolute;
 	}
+	span {
+		margin: 0px 0px 5px 0px;
+	}
+	a {
+		padding-left: 20px;
+		font-size: 14px;
+		text-decoration: none;
+		color: #0192B9;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.custom_loc {	
+	color: #0192B9;
+	text-decoration: none;
+	position: absolute;
+	top: 1175px;
+	left: 208px;
+	font-size: 14px;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.ship_to {
+	margin-top: 6px;
+	border-top: 1px solid #CBCCC9;
+	width: 215px;
+	margin-left: 15px;
 }
 
 .related_to {

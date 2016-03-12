@@ -6,6 +6,7 @@ var items = etsyData.results
 
 var productDisplay = items.map(function(obj){
 	var imgURL = obj.Images[0].url_170x135
+	var url = obj.url
 	var prodTitle = obj.title
 	var prodPrice = obj.price
 	var shopName = obj.Shop.shop_name
@@ -16,7 +17,7 @@ var productDisplay = items.map(function(obj){
 					<div class="triangle_holder">
 					<div class='triangle'></div>
 					</div>
-					<img src=${imgURL}>
+						<a href =${url}><img src=${imgURL}></a>
 					<div class="shop">
 						<span class="title">${prodTitle} 
 						<span>${shopName}</span>
