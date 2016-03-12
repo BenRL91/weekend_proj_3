@@ -12,44 +12,75 @@
 
 
 header.header1 {
+	position: relative;
 	display: flex;
 	align-items: center;
 	// justify-content: space-between;
-	padding: 0px 183px;
+	padding: 18px 183px 0px 270px;
 	background-color: white;
+	border-bottom: 1px solid #E1E3DF;
+	height: 80px;
 
 	.etsylogo {
+		position: absolute;
+		top: 5px;
+		left: 182px;
 		background-image: url("./etsylogo.png");
-		height: 96px;
+		height: 66px;
 		width: 96px;
-		background-size: 105%;
+		background-size: 100%;
 	}
+
+	.search_container {
+		display: flex;
+		padding-left: 15px;
+		padding-bottom: 18px;
+	}
+
+	.searchbox1 {
+		height: 35px;
+		width: 260px;
+	}
+
 	.searchBtn {
 		background: #34A8C4;
 		color: white;
+		width: 80px;
+		border-radius: 2px; 
 	}
 	.signin_container {
-	margin-left: 250px;
+		font-size: 13px;
+	margin-left: 240px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	width: 350px;
+	padding-bottom: 18px;
 
 		a {
 			color: #0192B9;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		.signInBtn {
 			color: #0192B9;
 			background: white;
+			height: 35px;
+			width: 65px;
+			border: 1px solid #0192B9;
+			border-radius: 3px; 
 		}
 		.cart_sprite {
 			display: flex;
 			align-items: flex-end;
-			margin-top: 10px;
+			padding-left: 10px;
 			background: url(./cart.png);
 			background-size: 40%;
 			background-repeat: no-repeat;
+			background-position: 12px 0px;
 			font-size: 14px;
 			height: 38px;
 			width: 50px;
@@ -62,9 +93,19 @@ header.header2 {
 	font-size: 15px;
 	display: flex;
 	justify-content: space-between;
-	padding: 0px 190px;
+	padding: 10px 290px 0px 190px;
 	background-color: white;
-	width: 1280px;
+	width: 1380px;
+	height: 43px;
+	border-bottom: 1px solid #E1E3DF;
+	margin-bottom: 30px;
+	a {
+		text-decoration: none;
+		color: #77777B;
+	&:hover {
+		color: darken(#77777B, 30%);
+		}
+	}
 }
 .app {
 	width: 1000px;
@@ -72,6 +113,13 @@ header.header2 {
 	.current_cat {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+		span {
+			position: absolute;
+			left: 10px;
+			font-size: 13px;
+			font-weight: bold;
+		}
 	}
 	.content_wrapper {
 		display: flex;
@@ -81,6 +129,7 @@ header.header2 {
 	h5 {
 		margin: 0;
 		margin-left: 15px;
+		margin-bottom: 6px;
 
 	}
 
@@ -88,20 +137,31 @@ header.header2 {
 		width: 250px;
 		background: #F6F5FB;
 		// background: white;
+		margin: 13px 15px 0px 10px;
 		.list {
+			padding-top: 12px;
 			display: flex;
 			flex-direction: column;	
+			justify-content: space-between;
 			border: 1px solid #CBCCC9;
+			border-radius: 3px;
 			background: white;
 			margin: 15px 0px 0px 0;
-			width: 100%;
+			width: 245px;
+			height: 410px;
 
 			a {
 			 	color: #5CA7E5;
-				font-size: 13px;
+				font-size: 14px;
 				text-decoration: none;
-				margin: 4px 0px 4px 30px;
+				margin: 0px 0px 0px 25px;
 				// margin-left: 26px;
+				&:hover {
+				text-decoration: underline;
+			}
+				&:last-child {
+					margin-bottom: 15px;
+				}
 			}
 		}
 	}
@@ -112,18 +172,26 @@ header.header2 {
 		font-size: 14px;
 		font-weight: bold;
 		background: #F6F5FB;
-		height: 50px;
+		height: 53px;
 		width: 100%;
 		border: 1px 0px 1px 0px solid #CBCCC9;
+		position: relative;
+		.refine {
+			position: absolute;
+			top: 25px;
+			font-size: 14px;
+		}
 
 	}
 
 			.list2 {
 			display: flex;
 			flex-direction: column;	
+			// align-items: center;
 			background: white;
 			border: 1px solid #CBCCC9;
-			// margin: 0px 0px 0 0;
+			border-radius: 3px;
+			// margin: 0px 30px 0px 0px;
 			width: 100%;
 		}
 
@@ -131,14 +199,38 @@ header.header2 {
 		display: flex;
 		flex-direction: column;
 		position: relative;
+		border-bottom: 1px solid  #CBCCC9;
+		width: 219px;
+		padding-top: 36px;
+		padding-bottom: 23px;
+		margin-left: 13px;
+		h4 {
+			position: absolute;
+			top: 1px;
+			left: 3px;
+			font-size: 13px;
+			// font-weight: normal;
+			padding-left: 0px;
+			margin: 12px 0px 9px 0px;
+
+		}
 	}
 .item_type input {
 	position: absolute;
-	left: 10px;
+	left: 2px;
 }
 .item_type span {
 	color: #5CA7E5;
-	padding-left: 36px;
+	padding-left: 22px;
+	font-size: 13px;
+	margin: 4px 0px;
+	a {
+	color: #4091B6;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 	main {
 		width: 80%;
@@ -158,11 +250,8 @@ header.header2 {
 		.main2wrapper {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-around;
-			.prodInfo {
-				background: white;
-
-			}
+			justify-content: space-between;
+			width: 760px;
 			.shop {
 				text-overflow: ellipsis;
 				width: 240px;
@@ -179,13 +268,48 @@ header.header2 {
 		}
 }
 
+.price_span {
+	width: 90px;
+	position: relative;
+	span {
+	position: absolute;
+	top: 0;
+	}
+}
 .price_range {
 	display: flex;
-	// flex-direction: row;
+	flex-direction: row;
+	align-items: center;
 	flex-wrap: wrap;
+	padding: 44px 0px 0px 12px;
 	input {
-		width: 50px;
+		font-size: 14px;
+		width: 70px;
+		height: 38px;
+		border: 1px solid #CBCCC9;
+		border-radius: 3px;
+		padding-left: 12px;
 	}
+	span {
+		font-size: 13px;
+		margin: 0px 10px;
+	}
+	.arrow_container {
+		height: 38px;
+		width: 38px;
+		border: 1px solid #CBCCC9;
+		position: relative;
+		margin-left: 5px;
+	}
+	.arrow_btn {
+		position: absolute;
+		top: 12px;
+		left: 15px;
+		height: 0;
+		border-style: solid;
+		border-width: 6px 0 6px 8px;
+		border-color: transparent transparent transparent #000000;
+		}
 
 }
 .color_filter {
@@ -230,6 +354,15 @@ header.header2 {
 	margin: 2px;
 }
 
+.shop_locations {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	input {
+		position: absolute;
+	}
+}
+
 .related_to {
 	width: 700px;
 	color: #2E92B5;
@@ -239,6 +372,9 @@ header.header2 {
 	position: relative;
 	a {
 		margin: 5px 0px;
+		&:hover {
+				text-decoration: underline;
+			}
 		&:first-child {
 			margin-top: 30px;
 		}
@@ -265,6 +401,10 @@ header.header2 {
 		height: 38px;
 		width: 34px;
 		border: 1px solid #D9D9D9;
+		&:hover {
+			background: #F6F5FB;
+			border: 1px solid #C0C0C0;
+		}
 		// text-align: center;
 		font-size: 16px;
 		&:first-child {
@@ -283,9 +423,83 @@ header.header2 {
 		}
 }
 
+.prodInfo {
+	border: 1px solid #E1E3DF;
+	margin:0px 0px 20px 0px;
+	position: relative;
+	background: white;
+	&:hover #heart {
+		opacity: 100;
+	}
+	&:hover #hamburger {
+		opacity: 100;
+	}
+	&:hover .triangle_holder {
+		opacity: 100;
+	}
+	&:hover .triangle {
+		opacity: 100;
+	}
+
+}
+	#heart {
+		opacity: 0;
+		position: absolute;
+		top: 4px;
+		right: 38px;
+		height: 23px; 
+		width: 23px;
+		background: white;
+		padding: 3px 3px 3px 3px;
+		border-radius: 3px;
+		}
+	#hamburger {
+		opacity: 0;
+		position: absolute;
+		top: 4px;
+		right: 12px;
+		height: 23px; 
+		width: 23px;
+		background: white;
+		padding: 3px 3px 3px 3px;
+		border-radius: 3px;
+	}
+	div.triangle_holder {
+		opacity: 0;
+		position: absolute;
+		top: 4px;
+		right: 4px;
+		height: 23px;
+		width: 15px;
+		background: white;
+		border-radius: 3px;
+		border: 0px 1px 0px 0px;
+	}
+	div.triangle {
+		opacity: 0;
+		position: absolute;
+		top: 7px;
+		right: 3px;
+		width: 0;
+		height: 0;
+		background: white;
+		border-style: solid;
+		border-width: 8px 4px 0 4px;
+		border-color: #cdd1d4 transparent transparent transparent;
+	}
 .price_contain {
 	display: flex;
 	justify-content: space-between;
+	padding: 5px 10px 10px;
+}
+.shop {
+	padding-right: 20px;
+	padding-left: 10px;
+}
+.title {
+	font-size: 13px;
+	// padding-left: 10px;
+	// margin-right: 10px;
 }
 
 .shopName {
@@ -295,6 +509,7 @@ header.header2 {
 }
 
 .price {
+	font-size: 13px;
 	color: #78C042;
 }
 

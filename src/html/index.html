@@ -9,7 +9,7 @@
 <div class="total_wrap">
 	<header class='header1'>
 			<div class="etsylogo"></div>
-		<div>
+		<div class='search_container'>
 			<input class='searchbox1'placeholder='Search'><button class='searchBtn'>Search</button>
 		</div>
 
@@ -17,26 +17,24 @@
 			<a href="#">Sell On Etsy</a>
 			<a href="#">Register</a>
 			<button class='signInBtn'>Sign In</button>
-			<div href="#" class='cart_sprite'>
+			<div class='cart_sprite'>
 				<span>Cart</span>
 			</div>
 		</div>
 		</header>
 	<header class='header2'>
-			<span>Clothing & Accessories</span>
-			<span>Jewelry</span>
-			<span>Craft Supplies & Tools</span>
-			<span>Weddings</span>
-			<span>Entertainment</span>
-			<span>Home & Living</span>
-			<span>Kids & Baby</span>
-			<span>Vintage</span>
+			<span><a href="#">Clothing & Accessories</a></span>
+			<span><a href="#">Jewelry</a></span>
+			<span><a href="#">Craft Supplies & Tools</a></span>
+			<span><a href="#">Weddings</a></span>
+			<span><a href="#">Entertainment</a></span>
+			<span><a href="#">Home & Living</a></span>
+			<span><a href="#">Kids & Baby</a></span>
+			<span><a href="#">Vintage</a></span>
 	</header>
   	<div class="app">
   		<div class='current_cat'>
-  			<span>Show Results for</span>
-  			<span>All Categories</span>
-  			<span>Sorty by</span>
+  			<span>Show Results for:</span>
   		</div>
 	  		<div class="content_wrapper">
 	  		<aside>
@@ -64,20 +62,24 @@
 			       	</div>
 			        <div class="list2">
 			        	<div class="item_type">
-			        	<h4>Item Type</h4>
+			        	<h4>Item type</h4>
+			        		<input type="radio" checked="checked">
+			        		<span><a href="#">All Items</a></span>
 			        		<input type="radio">
-			        		<span>All Items</span>
+			        		<span><a href="#">Hand Made</a></span>
 			        		<input type="radio">
-			        		<span>Hand Made</span>
-			        		<input type="radio">
-			        		<span>Vintage</span>
+			        		<span><a href="#">Vintage</a></span>
+			        	</div>
+			        	<div class="price_span">
+			        		<span>Price&nbsp($)</span>
 			        	</div>
 			        	<div class="price_range">
-			        	<span>Price ($)</span>
 			        		<input type="text" placeholder="Low">
 			        		<span>to</span>
 			        		<input type="text" placeholder="High">
-			        		<button class='arrow_btn'></button>
+			        		<div class='arrow_container'>
+				        		<div class='arrow_btn'></div>
+			        		</div>
 			        	</div>
 			        	<div class="color_filter">
 			        	<span class="filter_span">Filter by color</span>
@@ -94,16 +96,16 @@
 			        	</div>
 			        	<div class="ordering_options">
 			        		<input type="checkbox">
-			        		<span>Accepts Etsy gift cards</span>
+			        		<span><a href="#">Accepts Etsy gift cards</a></span>
 			        		<input type="checkbox">
-			        		<span>Customizable</span>
+			        		<span><a href="#">Customizable</a></span>
 			        	</div>
 			        	<div class="shop_locations">
 			        		<h5>Shop location</h5>
 			        		<input type="radio">
-			        		<span>Anywhere</span>			     <input type="radio">
-			        		<span>United States</span>
-			        		<span>Choose a custom location</span>
+			        		<span><a href="#">Anywhere</a></span>			     <input type="radio">
+			        		<span><a href="#">United States</a></span>
+			        		<span><a href="#">Choose a custom location</a></span>
 			        	</div>
 			        	<div class="ship_to">
 			        		<select>
@@ -155,7 +157,7 @@
   </div>
 	  	</div>
   			<div class='pre_footer'>
-  				<span>Get top trends and fresh editors' picksin your inbox with Etsy Finds</span>
+  				<span>Get top trends and fresh editors' picks ccin your inbox with Etsy Finds</span>
   			<div>
 	  			<input type="text">
 	  			<button>Subscribe</button>
