@@ -57,7 +57,7 @@ header.header1 {
 	width: 350px;
 	padding-bottom: 18px;
 
-		a {
+		.signinlink {
 			color: #0192B9;
 			text-decoration: none;
 			&:hover {
@@ -73,20 +73,33 @@ header.header1 {
 			border: 1px solid #0192B9;
 			border-radius: 3px; 
 			&:hover {
-				background: lighten(#0192B9, 20%)
+				background: lighten(#0192B9, 60%)
 			}
 		}
 		.cart_sprite {
 			display: flex;
 			align-items: flex-end;
+			flex-direction: column;
 			padding-left: 10px;
-			background: url(./cart.png);
-			background-size: 40%;
-			background-repeat: no-repeat;
-			background-position: 12px 0px;
+			// background-size: 40%;
+			// background-repeat: no-repeat;
+			// background-position: 12px 0px
 			font-size: 14px;
 			height: 38px;
 			width: 50px;
+			text-decoration: none;
+			opacity: .6;
+			img {
+				height: 22px;
+				width: 22px;
+				opacity: 1;
+			}
+			span {
+				color: black;
+			}
+			&:hover {
+				opacity: .8;
+			}
 		}
 	}
 }
