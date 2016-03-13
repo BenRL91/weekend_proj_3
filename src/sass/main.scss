@@ -72,6 +72,9 @@ header.header1 {
 			width: 65px;
 			border: 1px solid #0192B9;
 			border-radius: 3px; 
+			&:hover {
+				background: lighten(#0192B9, 20%)
+			}
 		}
 		.cart_sprite {
 			display: flex;
@@ -259,7 +262,7 @@ header.header2 {
 			width: 760px;
 			.count {
 				position: absolute;
-				
+
 			}
 			.shop {
 				text-overflow: ellipsis;
