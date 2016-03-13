@@ -11,6 +11,7 @@ var productDisplay = items.map(function(obj){
 	var prodPrice = obj.price
 	var shopName = obj.Shop.shop_name
 	var currCode = obj.currency_code
+	var count = etsyData.count
 		return `<div class="prodInfo">
 					<img id="heart" src="./css/heart.png">
 					<img id="hamburger" src="./css/hamburger.png">
@@ -33,6 +34,12 @@ var productDisplay = items.map(function(obj){
 var main2 = $(".main2wrapper")
 
 main2.append(productDisplay)
+
+var countResults = etsyData.count + " Results"
+
+var countSpan = $(".count")
+
+countSpan.append(countResults)
 
 var hamburger = $("#hamburger")
 var heart = $("#heart")
