@@ -40,6 +40,11 @@ header.header1 {
 	.searchbox1 {
 		height: 35px;
 		width: 260px;
+		border-radius: 3px;
+		border: 1px solid #C6C6C6;
+		&:hover {
+			border: 1px solid darken(#C6C6C6, 15%);
+		}
 	}
 
 	.searchBtn {
@@ -47,6 +52,9 @@ header.header1 {
 		color: white;
 		width: 80px;
 		border-radius: 2px; 
+		&:hover {
+			background: lighten(#34A8C4, 5%);
+		}
 	}
 	.signin_container {
 		font-size: 13px;
@@ -268,6 +276,47 @@ header.header2 {
 		width: 100%;
 		background: url(./bumble_bees.png);
 		}
+
+		.between {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.search_info {
+			font-size: 14px;
+			margin-bottom: 15px;
+			a {
+				text-decoration: none;
+				color: #0192B5;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+			.sort_by {
+				font-size: 14px;
+				display: flex;
+				align-items: center;
+				// margin: 5px;
+				height: 30px;
+				width: 160px;
+				overflow: hidden;
+				border: none;
+				background: transparent;
+				position: relative;
+				// border: 1px solid #CBCCC9;
+				select {
+					font-size: 14px;
+					color: #4090B5;
+					height: 30px;
+					border: none;
+					background:  url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+					position: absolute;
+					right: -12px;
+
+
+				}
+		}
 		.main2wrapper {
 			display: flex;
 			flex-wrap: wrap;
@@ -275,6 +324,7 @@ header.header2 {
 			width: 760px;
 			.count {
 				position: absolute;
+
 
 			}
 			.shop {
@@ -320,6 +370,9 @@ header.header2 {
 		border-radius: 3px;
 		padding-left: 12px;
 		margin-bottom: 20px;
+		&:hover {
+			border: 1px solid darken(#CBCCC9, 15%)
+		}
 	}
 	span {
 		font-size: 13px;
@@ -329,9 +382,13 @@ header.header2 {
 		height: 38px;
 		width: 38px;
 		border: 1px solid #CBCCC9;
+		border-radius: 3px;
 		position: relative;
 		margin-left: 5px;
 		margin-bottom: 20px;
+		&:hover {
+			border: 1px solid darken(#CBCCC9, 15%)
+		}
 	}
 	.arrow_btn {
 		position: absolute;
@@ -483,12 +540,29 @@ header.header2 {
 	// border-bottom: 1px solid#CBCCC9;
 	width: 215px;
 	margin-left: 15px;
+
 	h4 {
 		margin: 0px 0px 10px 0px;
 		font-size: 14px;
 	}
-	select {
-		color: red;
+
+	.select_menu {
+		border: 1px solid #CBCCC9;
+		border-radius: 3px;
+		width: 210px;
+		overflow: hidden;
+		&:hover {
+			border: 1px solid darken(#CBCCC9, 20%);
+		}
+	}
+	.select_menu select {
+		font-size: 14px;
+		color: darken(#CBCCC9, 60%);
+		background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+		// border: 1px solid #CBCCC9;
+		border: none;
+		height: 38px;
+		width: 107%;
 	}
 }
 
@@ -671,11 +745,57 @@ header.header2 {
 		width: 95px;
 		border: 1px solid #2F98B1;
 		border-radius: 2px; 
+		&:hover {
+			background: lighten(#34A8C4, 5%);
+		}
 		}
 	}
 }
 
+footer {
+	font-size: 14px;
+	display: flex;
+	justify-content: space-around;
+	height: 300px;
+	width: 1100px;
+	margin: 40px 0px 50px 130px;
+	border-bottom: 1px solid #CBCCC9;
+	.footer_list {
+		display: flex;
+		flex-direction: column;
+		// justifyx-content: space-between;
+		button {
+		background: #34A8C4;
+		color: white;
+		width: 120px;
+		border: 1px solid #2F98B1;
+		border-radius: 3px; 
+		margin-bottom: 20px;
+		&:hover {
+			background: lighten(#34A8C4, 5%);
+		}
+	}
+		span {
+			color: #34A8C4;
+		margin-bottom: 10px;
+		a {
+			text-decoration: none;
+			color: #34A8C4;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+			&:first-child {
+				color: black;
+			}
+			strong {
+				color: black;
+				font-weight: normal;
+			}
+		}
 
+	}
+}
 
 
 

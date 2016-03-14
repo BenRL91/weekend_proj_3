@@ -18,7 +18,7 @@ var productDisplay = items.map(function(obj){
 					<div class="triangle_holder">
 					<div class='triangle'></div>
 					</div>
-						<a href =${url}><img src=${imgURL}></a>
+						<a href =${url}><img src=${imgURL} alt=${prodTitle}></a>
 					<div class="shop">
 						<span class="title">${prodTitle} 
 						<span>${shopName}</span>
@@ -35,7 +35,7 @@ var main2 = $(".main2wrapper")
 
 main2.append(productDisplay)
 
-var countResults = etsyData.count + " Results"
+var countResults = etsyData.count + "Results"
 
 var countSpan = $(".count")
 
